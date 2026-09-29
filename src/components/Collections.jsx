@@ -16,7 +16,7 @@ const collections = [
   {
     name: "LUXE WAVY",
     description: "Soft, voluminous waves that bring elegance and movement.",
-    price: "₦45,000",
+    price: "₦10,000",
     front: luxeFront,
     back: luxeBack,
   },
@@ -24,7 +24,7 @@ const collections = [
   {
     name: "SLEEK STRAIGHT",
     description: "Timeless, sleek and straight for a polished, sophisticated look.",
-    price: "₦40,000",
+    price: "₦10,000",
     front: sleekFront,
     back: sleekBack,
   },
@@ -32,7 +32,7 @@ const collections = [
   {
     name: "CURLY QUEEN",
     description: "Bouncy, curly and full of life. Perfect for any occasion.",
-    price: "₦43,000",
+    price: "₦12,000",
     front: curlyFront,
     back: curlyBack,
   },
