@@ -31,10 +31,17 @@ body {
 }
 
 .logo {
-  color: pink;
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(255, 192, 203, 0.3));
 }
 
 .nav-links {
@@ -116,10 +123,11 @@ body {
 
 .hero-content h1 {
   font-family: "Playfair Display", serif;
-  font-size: 75px;
+  font-size: 68px;
   line-height: 0.95;
   letter-spacing: 3px;
   margin-bottom: 25px;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
 }
 
 .hero-description {

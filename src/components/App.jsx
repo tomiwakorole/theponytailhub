@@ -10,7 +10,9 @@ function App() {
 
       {/* Navigation */}
       <nav className="navbar">
-        <div className="logo">THE PONYTAIL HUB</div>
+        <div className="logo" aria-label="The Ponytail Hub home">
+          <img src="/icons.svg" alt="The Ponytail Hub logo" className="brand-logo" />
+        </div>
 
         <div className="nav-links">
           <a href="#home">Home</a>
@@ -43,9 +45,9 @@ function App() {
           <p className="hero-small-text">WELCOME TO</p>
 
           <h1>
-            THE PONYTAIL
+            ELEVATED STYLE
             <br />
-            HUB
+            FOR EVERY DAY
           </h1>
 
           <p className="hero-description">
