@@ -1,10 +1,43 @@
+import { useEffect, useRef } from "react";
 import "../styles/App.css";
 import ponytailVideo from "../assets/ponytail-video.mp4";
 import About from "./About";
 import Contact from "./Contact";
 import Collections from "./Collections";
 import Footer from "./Footer";
+
 function App() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (!video) return;
+
+    const startVideo = async () => {
+      try {
+        video.muted = true;
+        await video.play();
+      } catch (error) {
+        console.warn("Hero video autoplay failed:", error);
+      }
+    };
+
+    const handleReady = () => {
+      if (video.readyState >= 2) {
+        startVideo();
+      }
+    };
+
+    video.addEventListener("loadeddata", handleReady);
+    video.addEventListener("canplay", handleReady);
+
+    return () => {
+      video.removeEventListener("loadeddata", handleReady);
+      video.removeEventListener("canplay", handleReady);
+    };
+  }, []);
+
   return (
     <div className="home">
 
@@ -27,11 +60,13 @@ function App() {
       <section className="hero" id="home">
 
         <video
+          ref={videoRef}
           className="hero-video"
           autoPlay
           muted
           loop
           playsInline
+          preload="auto"
         >
           <source src={ponytailVideo} type="video/mp4" />
           Your browser does not support the video tag.
