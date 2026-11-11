@@ -45,9 +45,9 @@ function App() {
           <p className="hero-small-text">WELCOME TO</p>
 
           <h1>
-            ELEVATED STYLE
+            THE PONYTAIL HUB <br />
             <br />
-            FOR EVERY DAY
+            <span>BEAUTY REDEFINED</span>
           </h1>
 
           <p className="hero-description">
