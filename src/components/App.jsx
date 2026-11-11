@@ -43,13 +43,9 @@ function App() {
         {/* Hero content */}
         <div className="hero-content">
           <p className="hero-small-text">WELCOME TO</p>
-
           <h1>
-            THE PONYTAIL HUB <br />
-            <br />
-            <span>BEAUTY REDEFINED</span>
+            THE PONYTAIL HUB 
           </h1>
-
           <p className="hero-description">
             Elevate your look with beautiful, stylish and
             effortless ponytails made for every occasion.
